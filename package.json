@@ -5,10 +5,9 @@
   "license": "UNLICENSED",
   "author": "gethugothemes",
   "scripts": {
-    "dev": "hugo server || cd exampleSite && hugo server --themesDir ../..",
-    "build": "hugo --gc --minify --templateMetrics --templateMetricsHints --forceSyncStatic || cd exampleSite --themesDir ../.. && hugo --gc --minify --templateMetrics --templateMetricsHints --forceSyncStatic --themesDir ../..",
-    "preview": "hugo server --disableFastRender --navigateToChanged --templateMetrics --templateMetricsHints --watch --forceSyncStatic -e production --minify  || cd exampleSite && hugo server --disableFastRender --navigateToChanged --templateMetrics --templateMetricsHints --watch --forceSyncStatic -e production --minify",
-    "vercel-build": "./vercel-build.sh"
+    "dev": "hugo server",
+    "build": "hugo --gc --minify --templateMetrics --templateMetricsHints --forceSyncStatic",
+    "preview": "hugo server --disableFastRender --navigateToChanged --templateMetrics --templateMetricsHints --watch --forceSyncStatic -e production --minify"
   },
   "devDependencies": {
     "prettier": "^3.3.2",
